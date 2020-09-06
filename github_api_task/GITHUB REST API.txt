@@ -1,0 +1,4 @@
+GITHUB REST API:
+https://api.github.com/search/repositories?q=name_of_repo+language:name_of_lang&sort=stars&order=desc //эндпоинт на поиск репозитория (GET)
+
+https://api.github.com/users/user_name //эндпоинт на получение данных о пользователе (GET)
