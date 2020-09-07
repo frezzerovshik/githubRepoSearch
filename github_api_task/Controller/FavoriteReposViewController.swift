@@ -66,6 +66,15 @@ class FavoriteReposViewController: UIViewController, UITableViewDataSource, UITa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
+        fullNameOfRepo.backgroundColor = .white
+        repoDescription.backgroundColor = .white
+        fullNameOfOwner.backgroundColor = .white
+        email.backgroundColor = .white
+        fullNameOfRepo.textColor = .black
+        repoDescription.textColor = .black
+        fullNameOfOwner.textColor = .black
+        email.textColor = .black
         listOfFavorite.dataSource = self
         listOfFavorite.delegate = self
         listOfFavorite.register(FavouriteRepoCellViewController.self, forCellReuseIdentifier: "FavRepoCell")

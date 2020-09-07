@@ -37,7 +37,16 @@ class SeparateRepoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("привет, переданный айтем теперь такой: \(String(describing: item))")
+
+        view.backgroundColor = .white
+        fullNameOfRepo.backgroundColor = .white
+        repoDescription.backgroundColor = .white
+        fullNameOfOwner.backgroundColor = .white
+        email.backgroundColor = .white
+        fullNameOfRepo.textColor = .black
+        repoDescription.textColor = .black
+        fullNameOfOwner.textColor = .black
+        email.textColor = .black
         navigationController?.navigationBar.isHidden = false
         navigationController?.navigationBar.backItem?.backBarButtonItem?.action = #selector(beauty(sender:))
         fullNameOfRepo.frame = CGRect(x: view.frame.width * 0.05,
